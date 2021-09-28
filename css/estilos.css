@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+  background-color:  #24252A !important;
+}
+*{
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: #24252A; */
+}
+
+li, a, button, h1{
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none !important;
+  list-style-type: none;
+}
+
+#navbar ul a{
+  color: black;
+}
+
+.mainContainer{
+  padding: 0 10%;
+}
+
+.container-nav{
+  display: flex;
+  align-items: center; /*Alinea los elementos de manera vertical*/
+  justify-content: space-between; /*Alinea los elementos de manera horizontal llevandolo a los laterales*/
+  padding: 20px 0%;
+  background-color: white;
+  padding: 3px 5px;
+}
+
+#navbar ul li{
+  float:left;
+  padding: 0 3em 0 0;
+}
+
+#navbar ul li:nth-child(3){
+  padding: 0; /*Para quitar el padding del ultimo item del navbar*/
+}
+
+#navbar ul li a:hover{
+  color: #568bd2;
+  transition: all 0.3s ease 0s;
+}
+
+#logo{
+  width: 120px;
+}
+
+#logo img{
+  width: 100%;
+  height: auto
+}
+#btnContact{
+  color: #ffffff;
+  background-color: #2671d6;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+#btnContact:hover{
+  background-color: #275ba1;
+}
+
+#carousel{
+  width: auto;
+  height: 900px;
+}
+
+#carousel div img{
+  height: 100%;
+  width: auto;
+}
+
+#services{
+  display: flex;
+  flex-direction: column !important;
+}
+
+.card{
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around;
+  height: 300px;
+  margin:  15px 0 0 0;
+  background-color:  #24252A  !important;
+}
+.txtCard{
+  color: rgb(245, 249, 245);
+}
+
+.card div img{
+  height: 100%;
+  padding-right: 10px;
+}
+.even{
+  order: 2;
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+.container-text{
+  display: flex;
+  align-items: center;
+}
