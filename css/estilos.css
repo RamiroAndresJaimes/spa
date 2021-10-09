@@ -1,113 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-body{
-  background-color:  #24252A !important;
+:root{
+  --fondo: #ffffff;
+  --colorText: #000000;
 }
+
 *{
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background-color: #24252A; */
+}
+a, button, li{
+  font-size: 23px;
+  text-decoration: none;
+}
+.contenedor{
+  display: grid;
+  margin: 0 5%;
+  grid-template-areas:"header"
+                      "main"
+                      "footer";
+  grid-gap: 15px;
+
+}
+.nav-menu ul{
+  margin: auto 0 ;
+}
+.nav-menu ul li{
+  list-style: none;
+  float: left;
+  margin-right: 25px;
 }
 
-li, a, button, h1{
-  color: #000000;
-  font-weight: 400;
-  text-decoration: none !important;
-  list-style-type: none;
+.nav-menu ul li a{
+  text-decoration: none;
+  color: colorText;
 }
-
-#navbar ul a{
-  color: black;
+.nav-menu ul li:nth-child(4){
+  margin-right: 0; /*Para quitar el padding del ultimo item del navbar*/
 }
-
-.mainContainer{
-  padding: 0 10%;
-}
-
-.container-nav{
-  display: flex;
-  align-items: center; /*Alinea los elementos de manera vertical*/
-  justify-content: space-between; /*Alinea los elementos de manera horizontal llevandolo a los laterales*/
-  padding: 20px 0%;
-  background-color: white;
-  padding: 3px 5px;
-}
-
-#navbar ul li{
-  float:left;
-  padding: 0 3em 0 0;
-}
-
-#navbar ul li:nth-child(3){
-  padding: 0; /*Para quitar el padding del ultimo item del navbar*/
-}
-
-#navbar ul li a:hover{
-  color: #568bd2;
-  transition: all 0.3s ease 0s;
-}
-
-#logo{
-  width: 120px;
-}
-
-#logo img{
-  width: 100%;
-  height: auto
-}
-#btnContact{
+.btnReserva{
   color: #ffffff;
   background-color: #2671d6;
   padding: 9px 25px;
   border: none;
+  line-height: normal;
   border-radius: 50px;
   transition: all 0.3s ease 0s;
 }
 
-#btnContact:hover{
-  background-color: #275ba1;
+
+.header{
+  display: grid;
+  grid-area: header;
+  grid-template-areas: "logo navmenu";
 }
 
-#carousel{
-  width: auto;
-  height: 900px;
+.main{
+  display: grid;
+  grid-area: main;
+  grid-template-areas:"carrusel"
+                      "servicios";
+  grid-gap: 15px;
 }
 
-#carousel div img{
-  height: 100%;
-  width: auto;
+.logo{
+  grid-area: logo;
+  /**Se haran correciones cuando metan la imagen original*/
 }
 
-#services{
+.nav-menu{
   display: flex;
-  flex-direction: column !important;
-}
-
-.card{
-  display: flex;
-  flex-direction: row !important;
-  justify-content: space-around;
-  height: 300px;
-  margin:  15px 0 0 0;
-  background-color:  #24252A  !important;
-}
-.txtCard{
-  color: rgb(245, 249, 245);
-}
-
-.card div img{
-  height: 100%;
-  padding-right: 10px;
-}
-.even{
-  order: 2;
-  padding-left: 15px;
-  padding-right: 0;
-}
-
-.container-text{
-  display: flex;
+  line-height: 60px;
   align-items: center;
+  justify-content: flex-end;
+  grid-area: navmenu;
+}
+
+.carrusel{
+  grid-area: carrusel;
+}
+
+.servicios{
+  display: grid;
+  grid-area: servicios;
+  /* Hago grid en area para que al momento de disminur la pantalla el poder cambiar esas areas haciendolo resposive */
+  grid-template-areas:"servicio1 servicio1"
+                      "servicio2 servicio2"
+                      "servicio3 servicio3";
+  grid-gap: 20px;
+}
+.servicios > div{
+  display: grid;
+  grid-template-areas:"imagen texto";
+  border: 1px solid rgba(0,0,0,.125);
+  grid-gap: 15px;
+}
+
+#s1{ grid-area: servicio1; }
+#s2{ grid-area: servicio2; }
+#s3{ grid-area: servicio3; }
+
+
+.imgServicio{
+  margin: auto 0;
+  grid-area: imagen;
+}
+
+.card .infoServicio{
+  grid-area: texto;
+}
+.infoServicio .info{
+  padding-left:  10px;
+}
+.titleService{
+  padding: 5px 0;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(179, 214, 194);
+  font-size: 3vw;
+}
+
+.wrapIcon a{
+  margin-right: 20px;
+  font-size: 35px;
+}
+@media screen and (max-width: 1000px) {
+  .servicios  > div{
+    grid-template-areas:"texto"
+                        "imagen";
+  }
+  .imgServicio{
+    margin: 0 auto;
+  }
 }
