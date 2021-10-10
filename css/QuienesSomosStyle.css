@@ -30,8 +30,8 @@ li, a, button{
 
 .container-nav{
   display: flex;
-  align-items: center; 
-  justify-content: space-between; 
+  align-items: center;
+  justify-content: space-between;
   padding: 20px 0%;
   background-color: #24252A;
   padding: 3px 5px;
@@ -43,7 +43,7 @@ li, a, button{
 }
 
 #navbar ul li:nth-child(3){
-  padding: 0; 
+  padding: 0;
 }
 
 #navbar ul li a:hover{
@@ -82,7 +82,7 @@ li, a, button{
   grid-template-rows: repeat(2, auto);
   grid-column-gap: 20px;
   grid-row-gap: 150px;
-  grid-template-areas: 
+  grid-template-areas:
   "img img text text"
   "mision mision vision vision";
 
@@ -127,7 +127,7 @@ h1{
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-row-gap: 50px;
-    grid-template-areas: 
+    grid-template-areas:
     "text text text"
     "img img img"
     "mision . vision";
@@ -145,7 +145,7 @@ h1{
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(4, auto);
     grid-row-gap: 50px;
-    grid-template-areas: 
+    grid-template-areas:
     "text text text"
     "img img img"
     "mision mision mision "
@@ -162,12 +162,3 @@ h1{
     height: 300px;
   }
 }
-
-
-
-
-
-  
-  
-
-  
