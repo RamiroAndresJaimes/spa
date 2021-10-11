@@ -6,29 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../css/QuienesSomosStyle.css">
+  <link rel="stylesheet" href="../css/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
   <title>Quienes somos</title>
 </head>
 
 <body>
-  <div class="mainContainer">
+  <div class="contenedor">
 
-    <header>
-      <div class="container-nav">
-        <div id="logo">
-          <a href="../index.html"><img src="../imagenes/logos/Logo_Remaster.png" height="150rem" weight="200rem"></a>
-        </div>
-        <nav id="navbar">
-          <ul>
-            <li><a href="quienesSomos.html">Quienes somos</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="ubicacion.html">Ubicacion</a></li>
-          </ul>
-        </nav>
-        <a href="#">
-          <button id="btnContact">Reservas</button>
-        </a>
+    <header class="header">
+      <div class="logo">
+      <img src="imagenes/logos/Logo_Remaster.png" alt="imagen logo spa" height="150rem" weight="200rem" >
       </div>
+      <div class="hamb-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="quienesSomos.html">Quienes somos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li> <a href="ubicacion.html">Ubicacion</a></li>
+          <li>
+            <a href="#">
+              <button class="btnReserva" type="button" name="button">Reservas</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="Main_QuienesSomos">
@@ -55,34 +59,22 @@
       </div>
 
     </main>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <i class="fas fa-leaf"></i>
+          </a>
+          <span class="text-muted">© 2021 D'Luchy Spa</span>
+        </div>
 
-<footer class="bg-dark text-center text-white" id="footer">
-  <!-- Grid container -->
-  <div class="container p-3 pb-0">
-    <!-- Section: Social media -->
-    <section class="mb-3">
-      <!-- Facebook -->
-      <a class="btn btn-floating m-1" href="https://www.facebook.com/DLuchy-Spa-Movil-107247218239725" role="button"
-        ><img src="../imagenes/logos/Logo_facebook.png"  width="50px" height="55"></a>
-      <!-- WhatsApp -->
-      <a class="btn btn-floating m-1" href="#!" role="button"
-        ><img src="../imagenes/logos/Logo_WhatsApp.png"  width="50px"></a>
-      <!-- Instagram -->
-      <a class="btn btn-floating m-1" href="https://www.instagram.com/dluchy_spamovil/?hl=es" role="button"
-        ><img src="../imagenes/logos/Logo_Instagram.png"  width="50px"></a>
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">D'Luchy Spa.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-  </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="wrapIcon" class="ms-3"><a class="text-muted" href="#"><i class="fab fa-instagram" ></i></a></li>
+          <li class="wrapIcon" class="ms-3"><a class="text-muted" href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="wrapIcon" class="ms-3"><a class="text-muted" href="#"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+      </footer>
+    </div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
