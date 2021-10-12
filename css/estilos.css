@@ -21,7 +21,9 @@ a, button, li{
                       "main"
                       "footer";
   grid-gap: 15px;
-
+}
+.hamb-menu{
+  display: none;
 }
 .nav-menu ul{
   margin: auto 0 ;
@@ -134,7 +136,15 @@ a, button, li{
   .imgServicio{
     margin: 0 auto;
   }
-
-  
-
+  .nav-menu{
+    display: none;
+  }
+  .hamb-menu{
+    margin: auto 0;
+    color: rgb(175, 209, 241);
+    text-align: right;
+    font-size: 40px;
+    cursor: pointer;
+    display: block;
+  }
 }
