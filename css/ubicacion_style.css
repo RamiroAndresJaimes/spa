@@ -1,0 +1,9 @@
+.fachada{
+  
+    width: 1200px;
+    height: 600px;
+    background-image:url(../imagenes/carrusel_ubi/fachada.jpg); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+  }
